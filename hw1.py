@@ -59,7 +59,7 @@ def merge_k_lists(arr):
     return list(heapq.merge(*arr))
 
 def main():
-    sizes = [10, 100, 1000, 5000]
+    sizes = [10, 100, 1000, 5000, 10000]
     test_arrays = {size: [random.randint(1, 10000) for _ in range(size)] for size in sizes}
     benchmark_sorting(test_arrays)
 
